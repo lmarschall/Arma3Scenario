@@ -3,7 +3,7 @@ _taskConfigClass = [_this,0,"",[""]] call BIS_fnc_param;
 
 if (_taskConfigClass == "") exitWith {hint "No Config Class given."};
 
-// Standard Parameter
+// Standard Parameters
 _taskOwner = player;
 _taskState = "ASSIGNED";
 _taskPriority = 0;
@@ -20,6 +20,5 @@ if (_taskDestination != "") then
 {
 	_taskDestination = missionNamespace getVariable _taskDestination;
 };
-lookAt
 
 [_taskOwner, _taskId, [_taskDescription, _taskTitle, ""], _taskDestination, _taskState, _taskPriority, _taskShowNotification, _taskType] call BIS_fnc_taskCreate;

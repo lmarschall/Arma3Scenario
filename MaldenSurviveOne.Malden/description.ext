@@ -117,7 +117,7 @@ class MissionTasks
 		id = "task11";
 		description = "Meet the teammates at the location to start the mission.";
 		title = "Meet the team";
-		destination = "trigger_boat";
+		destination = "inv_helipad_boat";
 		type = "meet";
 	};
 	
@@ -144,7 +144,7 @@ class MissionTasks
 		id = "task14";
 		description = "Get to the evacuation zone so the helicopter can pick you up.";
 		title = "Get to Pick Location";
-		destination = "marker_evacuation_zone";
+		destination = "rescue_zone";
 		type = "getout";
 	};
 };
