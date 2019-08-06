@@ -5,9 +5,9 @@ if (_taskConfigClass == "") exitWith {hint "No Config Class given."};
 
 // Standard Parameters
 _taskOwner = player;
-_taskState = "ASSIGNED";
+_taskState = "CANCELED";
 _taskPriority = 0;
-_taskShowNotification = true;
+_taskShowNotification = false;
 
 // Parameters from Config File
 _taskId = (missionConfigFile >> "MissionTasks" >> _taskConfigClass >> "id") call BIS_fnc_getCfgData;
@@ -24,4 +24,3 @@ if (_taskDestination != "") then
 };
 
 [_taskOwner, [_taskId, _taskParent], [_taskDescription, _taskTitle, ""], _taskDestination, _taskState, _taskPriority, _taskShowNotification, _taskType] call BIS_fnc_taskCreate;
-assignedTask = _taskId;

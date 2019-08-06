@@ -1,6 +1,6 @@
-["TaskNine"] call it_fnc_succeedTask;
+["InspectionZamak"] call it_fnc_succeedTask;
 
-["TaskTen"] call it_fnc_assignTask;
+["InspectionHandle"] call it_fnc_assignTask;
 
 zamak enableAI "MOVE";
 

@@ -10,102 +10,146 @@ class CfgFunctions
 			//class myFunction {file = "setup/do.sqf";};
 			//class meeting {};
 		};
+
+		class Events
+		{
+			file = "events";
+			class welcomeSmith {};
+			class welcomeJohnson {};
+			class welcomeWilliams {};
+			class welcomeSleep {};
+			class inspectionMeeting {};
+			class inspectionDrive {};
+			class inspectionOfficer {};
+
+		};
 		
 		class CoreFunctions
 		{
 			file = "core";
 			class assignTask {};
+			class createTask {};
 			class succeedTask {};
+			class handleTrigger {};
 		};
 	};
 };
 
 class MissionTasks
 {
-    class TaskOne
-    {
-        id = "task1";
+	class WelcomeParent
+	{
+		id = "welcome_parent";
+		description = "Welcome to Malden, Soldier. Introduce yourself to the officers in the base.";
+		title = "Welcome to Malden";
+		destination = "";
+		type = "a";
+		parent = "";
+	};
+
+	class WelcomeSmith
+	{
+		id = "welcome_smith";
 		description = "Speak to Captain Smith at the helipad.";
 		title = "Speak to Captain Smith";
-		destination = "officerone";
+		destination = "captain_smith";
 		type = "talk";
-    };
-	
-	class TaskTwo
-    {
-        id = "task2";
-		description = "Speak to Captain Johnson at the barracks.";
-		title = "Speak to Captain Johnson";
-		destination = "officertwo";
-		type = "talk";
-    };
-	
-	class TaskThree
-	{
-		id = "task3";
-		description = "Speak to Commander Williams at the command center.";
-		title = "Speak to Commander Williams";
-		destination = "officerthree";
-		type = "talk";
+		parent = "welcome_parent";
 	};
 	
-	class TaskFour
+	class WelcomeJohnson
 	{
-		id = "task4";
+		id = "welcome_johnson";
+		description = "Speak to Captain Johnson at the barracks.";
+		title = "Speak to Captain Johnson";
+		destination = "captain_johnson";
+		type = "talk";
+		parent = "welcome_parent";
+	};
+	
+	class WelcomeWilliams
+	{
+		id = "welcome_williams";
+		description = "Speak to Commander Williams at the command center.";
+		title = "Speak to Commander Williams";
+		destination = "major_williams";
+		type = "talk";
+		parent = "welcome_parent";
+	};
+	
+	class WelcomeBed
+	{
+		id = "welcome_bed";
 		description = "Go to bed and sleep to the next morning.";
 		title = "Go to bed";
 		destination = "bed";
 		type = "wait";
-	};
-	
-	class TaskFive
-	{
-		id = "task5";
-		description = "Meet with your teammates.";
-		title = "Meet your team";
-		destination = "trigger_meeting";
-		type = "meet";
+		parent = "welcome_parent";
 	};
 
-	class TaskSix
+	class InspectionParent
 	{
-		id = "task6";
+		id = "inspection_parent";
+		description = "Major Williams ordered yout to inspect the villages around on the island. Meet with an AAF officer at the military base near Le Port.";
+		title = "Inspect the Villages";
+		destination = "";
+		type = "b";
+		parent = "";
+	};
+	
+	class InspectionMeeting
+	{
+		id = "inspection_meeting";
+		description = "Meet with your teammates at the yard.";
+		title = "Meet your team";
+		destination = "inv_helipad_yard";
+		type = "meet";
+		parent = "inspection_parent";
+	};
+
+	class InspectionHunter
+	{
+		id = "inspection_hunter";
 		description = "Get in the hunter with your teammates.";
 		title = "Get in the Hunter";
 		destination = "hunter";
 		type = "getin";
+		parent = "inspection_parent";
 	};	
 	
-	class TaskSeven
+	class InspectionDrive
 	{
-		id = "task7";
+		id = "inspection_drive";
 		description = "Drive to Pyrgos via the mainroad.";
 		title = "Drive to Pyrgos";
-		destination = "trigger_drive";
+		destination = "inv_helipad_hunter_destination";
 		type = "move";
+		parent = "inspection_parent";
 	};
 	
-	class TaskEight
+	class InspectionOfficer
 	{
-		id = "task8";
+		id = "inspection_officer";
 		description = "Speak to the AAF Officer.";
 		title = "Speak to the Officer";
 		destination = "aafleader";
 		type = "talk";
+		parent = "inspection_parent";
 	};
 	
-	class TaskNine
+	class InspectionZamak
 	{
-		id = "task9";
+		id = "inspection_zamak";
 		description = "Get your team into the Zamak Transporter.";
 		title = "Get in the Zamak";
 		destination = "zamak";
 		type = "getin";
+		parent = "inspection_parent";
 	};
 	
-	class TaskTen
+	class InspectionHandle
 	{
-		id = "task10";
+		id = "inspection_handle";
 		description = "Handle the inspection toegther with the AAF group.";
 		title = "Handle the inspection";
 		destination = "";
