@@ -3,7 +3,7 @@ _taskConfigClass = [_this,0,"",[""]] call BIS_fnc_param;
 
 if (_taskConfigClass == "") exitWith {hint "No Config Class given."};
 
-// Standard Parameters
+// Standard Parameter
 _taskOwner = player;
 _taskState = "ASSIGNED";
 _taskPriority = 0;
