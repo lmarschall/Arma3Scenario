@@ -1,0 +1,17 @@
+class Sentences
+{
+	class Welcome	//Name to be used later to call the sound
+	{
+		text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		speech[] = {"\sounds\welcome.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};
