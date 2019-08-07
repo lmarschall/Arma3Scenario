@@ -1,11 +1,12 @@
-[0,0,false] spawn BIS_fnc_cinemaBorder;
-disableUserInput true;
 
-captain_smith switchMove "HubBriefing_talkAround";
 player switchMove "HubSpectator_stand";
 
-captain_smith doWatch (position player);
-sleep 2;
+captain_smith lookAt (getPosVisual player);
+sleep 1;
+
+captain_smith switchMove "HubBriefing_talkAround";
+
+[0,0,false] spawn BIS_fnc_cinemaBorder;
 
 ["WelcomeSmith"] call it_fnc_succeedTask;
 
@@ -20,6 +21,5 @@ captain_smith KbWasSaid [player, "welcome", "welcome", 3];	//Search in 3 last se
 ["WelcomeJohnson"] call it_fnc_assignTask;
 
 [1,1,false] spawn BIS_fnc_cinemaBorder;
-disableUserInput false;
 captain_smith switchMove "";
 player switchMove "";
