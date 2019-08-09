@@ -1,3 +1,92 @@
+author			= "Varanon";
+OnLoadName		= "Point Insertion";
+OnLoadMission	= "A group of NATO soldiers is tasked with sabotaging a coastal defense.";
+//loadScreen		= "images\loadScreen.paa";
+
+class CfgTaskEnhancements
+{
+   enable       = 1;     //0: disable new task features (default), 1: enable new task features & add new task markers and task widgets into the map
+   3d           = 1;     //0: do not use new 3D markers (default), 1: replace task waypoints with new 3D markers
+   3dDrawDist   = 600;   //3d marker draw distance (default: 2000)
+   share        = 1;     //0: do not count assigned players (default), 1: count how many players have the task assigned
+   propagate    = 1;     //0: do not propagate (default), 1: propagate shared tasks to subordinates
+};
+
+#define CT_STATIC           0
+#define ST_PICTURE        0x30
+
+class RscPicture
+{
+    access = 0;
+    idc = -1;
+    type = CT_STATIC;
+    style = ST_PICTURE;
+    colorBackground[] = {0,0,0,0};
+    colorText[] = {1,1,1,1};
+    font = "PuristaLight";
+    sizeEx = 0;
+    lineSpacing = 0;
+    text = "";
+    fixedWidth = 0;
+    shadow = 0;
+    x = 0;
+    y = 0;
+    w = 0.2;
+    h = 0.15;
+};
+
+class RscMissionScreen
+{
+	idd = -1;
+	movingEnable = 1;
+	duration = 1e+011;
+	fadein = 0;
+	fadeout = 1;
+	onload = "uinamespace setvariable ['BIS_RscMissionScreen',_this select 0];";
+	class controls
+	{
+		class Picture_0: RscPicture
+		{
+			idc = 1100;
+			text = "";
+			x = "safezoneX";
+			y = "safezoneY";
+			w = "safezoneW";
+			h = "safezoneH";
+			autoplay = 1;
+			loops = 1;
+		};
+	};
+};
+
+class CfgMusic
+{
+	sounds[] = {intromusic};
+
+	class Intro
+	{
+		// display name
+		name	= "intromusic";
+
+		// filename, volume, pitch
+		sound[]	= { "\music\intro.ogg", db + 10, 1.0 };
+		titles[] = {1, "Music plays"};
+	};
+};
+
+class CfgIdentities
+{
+	class MyLittleSoldier
+	{
+		name		= "Givens";
+		nameSound	= "Givens"; // Arma 3 only!
+		face		= "whiteHead_06";
+		glasses		= "None";
+		speaker		= "Male05ENG";
+		pitch		= 1.1;
+	};
+};
+
 class CfgFunctions
 {
 	class Island_Thunder
@@ -14,6 +103,7 @@ class CfgFunctions
 		class Events
 		{
 			file = "events";
+			class Intro {};
 			class welcomeSmith {};
 			class welcomeJohnson {};
 			class welcomeWilliams {};
@@ -21,6 +111,7 @@ class CfgFunctions
 			class inspectionMeeting {};
 			class inspectionDrive {};
 			class inspectionOfficer {};
+			class inspectionStart {};
 
 		};
 		
@@ -31,6 +122,9 @@ class CfgFunctions
 			class createTask {};
 			class succeedTask {};
 			class handleTrigger {};
+			class showInfoText {};
+			class setupPlayer {};
+			class setupVehicle {};
 		};
 	};
 };
@@ -154,6 +248,7 @@ class MissionTasks
 		title = "Handle the inspection";
 		destination = "";
 		type = "search";
+		parent = "inspection_parent";
 	};
 	
 	class TaskEleven

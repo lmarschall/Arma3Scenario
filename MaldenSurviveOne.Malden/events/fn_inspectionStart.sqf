@@ -2,8 +2,6 @@
 
 ["InspectionHandle"] call it_fnc_assignTask;
 
-zamak enableAI "MOVE";
-
 player KbAddTopic ["inspection","dialogues\inspection.bikb","",""];
 aafleader KbAddTopic ["inspection","dialogues\inspection.bikb","",""];
 

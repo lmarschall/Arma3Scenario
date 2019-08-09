@@ -24,6 +24,8 @@ disableUserInput false;
 aafleader switchMove "";
 player switchMove "";
 
+zamak enableAI "MOVE";
+
 _aafunits = units group aafleader;
 { _x assignAsCargo zamak; } forEach _aafunits;
 _aafunits orderGetIn true;

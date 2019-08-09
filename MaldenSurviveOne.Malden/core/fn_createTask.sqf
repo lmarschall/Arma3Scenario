@@ -8,6 +8,7 @@ _taskOwner = player;
 _taskState = "CANCELED";
 _taskPriority = 0;
 _taskShowNotification = false;
+_task3D = true;
 
 // Parameters from Config File
 _taskId = (missionConfigFile >> "MissionTasks" >> _taskConfigClass >> "id") call BIS_fnc_getCfgData;
@@ -23,4 +24,4 @@ if (_taskDestination != "") then
 	_taskDestination = missionNamespace getVariable _taskDestination;
 };
 
-[_taskOwner, [_taskId, _taskParent], [_taskDescription, _taskTitle, ""], _taskDestination, _taskState, _taskPriority, _taskShowNotification, _taskType] call BIS_fnc_taskCreate;
+[_taskOwner, [_taskId, _taskParent], [_taskDescription, _taskTitle, ""], _taskDestination, _taskState, _taskPriority, _taskShowNotification, _taskType, _task3D] call BIS_fnc_taskCreate;
