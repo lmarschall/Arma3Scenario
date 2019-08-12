@@ -1,7 +1,7 @@
 ["WelcomeBed"] call it_fnc_succeedTask;
 
 [0, "BLACK", 5, 1] call BIS_fnc_fadeEffect;
-setDate [2030, 2, 25, 8, 0];
+setDate [2020, 10, 26, 8, 10];
 //sleep 5;
 
 // Prepare new mission capitel
@@ -14,8 +14,4 @@ sergeant_jones setPos getMarkerPos "marker_inspection_meeting_jones";
 ["InspectionParent"] call it_fnc_createTask;
 ["InspectionMeeting"] call it_fnc_assignTask;
 
-
-
-
-
-//[""] call it_fnc_assignTask;
+["Nato Camp Hope", "Airport"] call it_fnc_showInfoText;

@@ -61,15 +61,35 @@ class RscMissionScreen
 
 class CfgMusic
 {
-	sounds[] = {intromusic};
+	sounds[] = {};
 
 	class Intro
 	{
 		// display name
-		name	= "intromusic";
+		name	= "music_intro";
 
 		// filename, volume, pitch
 		sound[]	= { "\music\intro.ogg", db + 10, 1.0 };
+		titles[] = {1, "Music plays"};
+	};
+
+	class Landing
+	{
+		// display name
+		name	= "music_landing";
+
+		// filename, volume, pitch
+		sound[]	= { "\music\landing.ogg", db + 10, 1.0 };
+		titles[] = {1, "Music plays"};
+	};
+
+	class Evacuate
+	{
+		// display name
+		name	= "music_evacuate";
+
+		// filename, volume, pitch
+		sound[]	= { "\music\evacuate.ogg", db + 10, 1.0 };
 		titles[] = {1, "Music plays"};
 	};
 };
@@ -112,6 +132,10 @@ class CfgFunctions
 			class inspectionDrive {};
 			class inspectionOfficer {};
 			class inspectionStart {};
+			class investigationBoat {};
+			class investigationLanding {};
+			class investigationBarn {};
+			class investigationEvacuate {};
 
 		};
 		
@@ -125,6 +149,8 @@ class CfgFunctions
 			class showInfoText {};
 			class setupPlayer {};
 			class setupVehicle {};
+			class setupMonitor {};
+			class setupScreen {};
 		};
 	};
 };
@@ -250,40 +276,54 @@ class MissionTasks
 		type = "search";
 		parent = "inspection_parent";
 	};
-	
-	class TaskEleven
+
+	class InvestigationParent
 	{
-		id = "task11";
+		id = "investigation_parent";
+		description = "Your task is to investigate the aaf military base for the location.";
+		title = "Pursue the suspicion";
+		destination = "";
+		type = "c";
+		parent = "";
+	};
+	
+	class InvestigationMeeting
+	{
+		id = "investigation_meeting";
 		description = "Meet the teammates at the location to start the mission.";
 		title = "Meet the team";
-		destination = "inv_helipad_boat";
+		destination = "inv_helipad_yard";
 		type = "meet";
+		parent = "investigation_parent";
 	};
 	
-	class TaskTwelve
+	class InvestigationLanding
 	{
-		id = "task12";
+		id = "investigation_landing";
 		description = "Drive to the landing zone.";
 		title = "Drive to coast";
-		destination = "trigger_landing";
+		destination = "inv_helipad_Landing";
 		type = "move";
+		parent = "investigation_parent";
 	};
 	
-	class TaskThirteen
+	class InvestigationSearch
 	{
-		id = "task13";
-		description = "Search and destroy.";
-		title = "SAD";
+		id = "investigation_search";
+		description = "Look for the barn at the military base.";
+		title = "Search for the barn";
 		destination = "barn";
 		type = "search";
+		parent = "investigation_parent";
 	};
 	
-	class TaskFourteen
+	class InvestigationEvacuate
 	{
-		id = "task14";
+		id = "investigation_evacuate";
 		description = "Get to the evacuation zone so the helicopter can pick you up.";
 		title = "Get to Pick Location";
 		destination = "rescue_zone";
 		type = "getout";
+		parent = "investigation_parent";
 	};
 };

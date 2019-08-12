@@ -20,3 +20,4 @@ sergeant_jones KbWasSaid [player,"meeting","welcome",3];	//Search in 3 last seco
 [1,1,false] spawn BIS_fnc_cinemaBorder;
 disableUserInput false;
 player switchMove "";
+
