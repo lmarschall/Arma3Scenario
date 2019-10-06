@@ -6,11 +6,11 @@ switch (_triggerId) do
 {
     case "trigger_gate":
     {
-        if (assignedTask == "welcome_smith") then { [] spawn it_fnc_welcomeSmith;};
+        if (assignedTask == "welcome_davis") then { [] spawn it_fnc_welcomeDavis;};
     };
     case "trigger_barracks":
     {
-        if (assignedTask == "welcome_johnson") then { [] spawn it_fnc_welcomeJohnson;};
+        if (assignedTask == "welcome_jones") then { [] spawn it_fnc_welcomeJones;};
     };
     case "trigger_office":
     {

@@ -1,0 +1,34 @@
+{
+    "texts": [
+        {
+            "name": "welcome_davis_one.mp3",
+            "text": "Welcome to Malden, Lieutenant Wilson. We've been looking forward to have you with us. It's been pretty boring here sitting around and seeing nothing is happening on this island.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
+        },
+        {
+            "name": "welcome_davis_two.mp3",
+            "text": "Yeah, I was informed by the high command, that's pretty quiet at the moment. The last years were harsh on this island. Hopefully the tensions will keep low as long we are here.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+		{
+            "name": "welcome_davis_three.mp3",
+            "text": "We'll see, things can get out of control very fast sometimes. You just need a match to start the fire.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
+        },
+		{
+            "name": "welcome_davis_four.mp3",
+            "text": "Let's hope for the best. Are the other teammates arrived yet?",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+		{
+            "name": "welcome_davis_five.mp3",
+            "text": "Yeas, everybody's here already. You can meet Captain… at the barracks. Name1 and Name2 are in the commanding centre.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
+        }
+    ]
+}

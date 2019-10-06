@@ -124,8 +124,8 @@ class CfgFunctions
 		{
 			file = "events";
 			class Intro {};
-			class welcomeSmith {};
-			class welcomeJohnson {};
+			class welcomeDavis {};
+			class welcomeJones {};
 			class welcomeWilliams {};
 			class welcomeSleep {};
 			class inspectionMeeting {};
@@ -167,22 +167,22 @@ class MissionTasks
 		parent = "";
 	};
 
-	class WelcomeSmith
+	class WelcomeDavis
 	{
-		id = "welcome_smith";
-		description = "Speak to Captain Smith at the helipad.";
-		title = "Speak to Captain Smith";
-		destination = "captain_smith";
+		id = "welcome_davis";
+		description = "Speak to Sergeant Davis at the gate.";
+		title = "Speak to Sergeant Davis";
+		destination = "sergeant_davis";
 		type = "talk";
 		parent = "welcome_parent";
 	};
 	
-	class WelcomeJohnson
+	class WelcomeJones
 	{
-		id = "welcome_johnson";
-		description = "Speak to Captain Johnson at the barracks.";
-		title = "Speak to Captain Johnson";
-		destination = "captain_johnson";
+		id = "welcome_jones";
+		description = "Speak to Sergeant Jones at the barracks.";
+		title = "Speak to Sergeant Jones";
+		destination = "sergeant_jones";
 		type = "talk";
 		parent = "welcome_parent";
 	};

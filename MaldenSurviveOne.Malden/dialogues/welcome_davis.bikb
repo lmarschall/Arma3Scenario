@@ -1,0 +1,62 @@
+class Sentences
+{
+	class WelcomeDavisOne	//Name to be used later to call the sound
+	{
+//		text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeDavis_One;
+		speech[] = {"\sounds\welcome_davis\welcome_davis_one.ogg"};			//Path to the sound file
+		actor = "sergeant_davis";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class WelcomeDavisTwo	//Name to be used later to call the sound
+	{
+//		text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeDavis_Two;
+		speech[] = {"\sounds\welcome_davis\welcome_davis_two.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class WelcomeDavisThree	//Name to be used later to call the sound
+	{
+//		text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeDavis_Three;
+		speech[] = {"\sounds\welcome_davis\welcome_davis_three.ogg"};			//Path to the sound file
+		actor = "sergeant_davis";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class WelcomeDavisFour	//Name to be used later to call the sound
+	{
+//		text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeDavis_Four;
+		speech[] = {"\sounds\welcome_davis\welcome_davis_four.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class WelcomeDavisFive	//Name to be used later to call the sound
+	{
+//		text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeDavis_Five;
+		speech[] = {"\sounds\welcome_davis\welcome_davis_five.ogg"};			//Path to the sound file
+		actor = "sergeant_davis";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

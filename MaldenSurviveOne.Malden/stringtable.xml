@@ -1,0 +1,23 @@
+// stringtable.xml
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="MaldenSurviveOne">
+	<Package name="Dialogues">
+		<Container name="WelcomeDavis">
+			<Key ID="STR_WelcomeDavis_One">
+				<Original>Welcome to Malden, Lieutenant Wilson. We ‘ve been looking forward to have you with us. It’s been pretty boring here sitting around and seeing nothing is happening on this island.</Original>
+			</Key>
+			<Key ID="STR_WelcomeDavis_Two">
+				<Original>Yeah, I was informed by the high command, that’s pretty quiet at the moment. The last years were harsh on this island. Hopefully the tensions will keep low as long we are here.</Original>
+			</Key>
+			<Key ID="STR_WelcomeDavis_Three">
+				<Original>We’ll see, things can get out of control very fast sometimes. You just need a match to start the fire.</Original>
+			</Key>
+			<Key ID="STR_WelcomeDavis_Four">
+				<Original>Let’s hope for the best. Are the other teammates arrived yet?</Original>
+			</Key>
+			<Key ID="STR_WelcomeDavis_Five">
+				<Original>Yeas, everybody’s here already. You can meet Captain… at the barracks. Name1 and Name2 are in the commanding centre.</Original>
+			</Key>
+		</Container>
+	</Package>
+</Project>
