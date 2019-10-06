@@ -4,7 +4,7 @@ disableUserInput true;
 major_williams switchMove "HubBriefing_talkAround";
 player switchMove "HubSpectator_stand";
 
-major_williams doWatch (position player);
+major_williams doWatch (visiblePosition player);
 sleep 2;
 
 ["WelcomeWilliams"] call it_fnc_succeedTask;

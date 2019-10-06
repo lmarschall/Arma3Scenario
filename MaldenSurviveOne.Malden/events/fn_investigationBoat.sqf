@@ -11,6 +11,7 @@ reverse _groupunits;
 } forEach _groupunits;
 
 (driver boat) doMove getMarkerPos "marker_boat_landing";
+
 group player setCombatMode "GREEN";
 group player setBehaviour "AWARE";
 
