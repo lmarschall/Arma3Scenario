@@ -1,0 +1,16 @@
+{
+    "texts": [
+        {
+            "name": "investigation_landing_one.mp3",
+            "text": "Sergeant put the boat up there, in the water, we'll come back later.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "investigation_landing_two.mp3",
+            "text": "Guys stick to the environment and keep low. Communications off.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        }
+    ]
+}

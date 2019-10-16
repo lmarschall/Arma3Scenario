@@ -1,0 +1,95 @@
+class Sentences
+{
+	class InvestigationBarnOne	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBarn_One;
+		speech[] = {"\sounds\investigation_barn\investigation_barn_one.ogg"};			//Path to the sound file
+		actor = "sergeant_davis";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBarnTwo	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBarn_Two;
+		speech[] = {"\sounds\investigation_barn\investigation_barn_two.ogg"};			//Path to the sound file
+		actor = "sergeant_brown";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBarnThree	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBarn_Three;
+		speech[] = {"\sounds\investigation_barn\investigation_barn_three.ogg"};			//Path to the sound file
+		actor = "sergeant_jones";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBarnFour	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBarn_Four;
+		speech[] = {"\sounds\investigation_barn\investigation_barn_four.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBarnFive	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBarn_Five;
+		speech[] = {"\sounds\investigation_barn\investigation_barn_five.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBarnSix	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBarn_Six;
+		speech[] = {"\sounds\investigation_barn\investigation_barn_six.ogg"};			//Path to the sound file
+		actor = "commander_williams";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBarnSeven	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBarn_Seven;
+		speech[] = {"\sounds\investigation_barn\investigation_barn_seven.ogg"};			//Path to the sound file
+		actor = "commander_williams";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBarnEight	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBarn_Eight;
+		speech[] = {"\sounds\investigation_barn\investigation_barn_eight.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

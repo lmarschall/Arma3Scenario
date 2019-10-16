@@ -15,13 +15,10 @@ _wp = _playerGrp addWaypoint [position inv_helipad_rescue, 0];
 _wp setWaypointType "GETIN";
 _wp synchronizeWaypoint [_birdwp];
 
-/* player KbAddTopic ["investigation","dialogues\investigation.bikb","",""];
-medic KbAddTopic ["investigation","dialogues\investigation.bikb","",""];
-autorifler KbAddTopic ["investigation","dialogues\investigation.bikb","",""];
-engineer KbAddTopic ["investigation","dialogues\investigation.bikb","",""];
+player KbAddTopic ["investigation_evacuate","dialogues\investigation_evacuate.bikb","",""];
+commander_williams KbAddTopic ["investigation_evacuate","dialogues\investigation_evacuate.bikb","",""];
 
-medic KbTell [player,"investigation","welcome", "GROUP"];
+sergeant_davis KbTell [player,"investigation_evacuate","investigationevacuateone", "VEHICLE"];
 waitUntil {
-medic KbWasSaid [player,"investigation","welcome",3];	//Search in 3 last seconds
-}; */
-
+sergeant_davis KbWasSaid [player,"investigation_evacuate","investigationevacuateone",3];
+};

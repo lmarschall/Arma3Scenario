@@ -1,0 +1,51 @@
+class Sentences
+{
+	class WelcomeBrownOne	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeBrown_One; 
+		speech[] = {"\sounds\welcome_brown\welcome_brown_one.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class WelcomeBrownTwo	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeBrown_Two; 
+		speech[] = {"\sounds\welcome_brown\welcome_brown_two.ogg"};			//Path to the sound file
+		actor = "sergeant_brown";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class WelcomeBrownThree	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeBrown_Three; 
+		speech[] = {"\sounds\welcome_brown\welcome_brown_three.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class WelcomeBrownFour	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeBrown_Four; 
+		speech[] = {"\sounds\welcome_brown\welcome_brown_four.ogg"};			//Path to the sound file
+		actor = "sergeant_brown";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

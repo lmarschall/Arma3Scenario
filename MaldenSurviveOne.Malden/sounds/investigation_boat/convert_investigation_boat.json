@@ -1,0 +1,22 @@
+{
+    "texts": [
+        {
+            "name": "investigation_boat_one.mp3",
+            "text": "At least we got some action going on here.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
+        },
+        {
+            "name": "investigation_boat_two.mp3",
+            "text": "Don't be too happy Sergeant, could be nothing. I want everybody to keep cool. The last thing we need is an open conflict between green and blue. We are going quiet and get out of there before the recognize anything.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+		{
+            "name": "investigation_boat_three.mp3",
+            "text": "Sounds good to me.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-B"
+        }
+    ]
+}

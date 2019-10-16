@@ -26,7 +26,7 @@
         },
 		{
             "name": "welcome_davis_five.mp3",
-            "text": "Yeas, everybody's here already. You can meet Captain… at the barracks. Name1 and Name2 are in the commanding centre.",
+            "text": "Yes, everybody's here already. You can meet Sergeant Jones at the barracks. Sergeant Brown and Commander Williams are waiting for you in the commanding centre.",
             "code": "en-US",
             "voice": "en-US-Wavenet-D"
         }

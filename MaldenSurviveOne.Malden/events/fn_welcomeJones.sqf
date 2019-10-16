@@ -1,25 +1,35 @@
 [0,0,false] spawn BIS_fnc_cinemaBorder;
 disableUserInput true;
 
-captain_johnson switchMove "HubBriefing_talkAround";
+// sergeant_jones switchMove "HubBriefing_talkAround";
 player switchMove "HubSpectator_stand";
 
-captain_johnson doWatch (position player);
+sergeant_jones doWatch (getPosVisual player);
 sleep 2;
 
-["WelcomeJohnson"] call it_fnc_succeedTask;
+["WelcomeJones"] call it_fnc_succeedTask;
 
-player KbAddTopic ["barracks","dialogues\barracks.bikb","",""];
-captain_johnson KbAddTopic ["barracks","dialogues\barracks.bikb","",""];
+player KbAddTopic ["welcome_jones","dialogues\welcome_jones.bikb","",""];
+sergeant_jones KbAddTopic ["welcome_jones","dialogues\welcome_jones.bikb","",""];
 
-captain_johnson KbTell [player,"barracks","welcome"];
+player KbTell [sergeant_jones,"welcome_jones","welcomejonesone"];
 waitUntil {
-captain_johnson KbWasSaid [player,"barracks","welcome",3];	//Search in 3 last seconds
+player KbWasSaid [sergeant_jones,"welcome_jones","welcomejonesone",3];	//Search in 3 last seconds
 };
 
-["WelcomeWilliams"] call it_fnc_assignTask;
+sergeant_jones KbTell [player,"welcome_jones","welcomejonestwo"];
+waitUntil {
+sergeant_jones KbWasSaid [player,"welcome_jones","welcomejonestwo",3];	//Search in 3 last seconds
+};
+
+player KbTell [sergeant_jones,"welcome_jones","welcomejonesthree"];
+waitUntil {
+player KbWasSaid [sergeant_jones,"welcome_jones","welcomejonesthree",3];	//Search in 3 last seconds
+};
+
+["WelcomeBrown"] call it_fnc_assignTask;
 
 [1,1,false] spawn BIS_fnc_cinemaBorder;
 disableUserInput false;
-captain_johnson switchMove "";
+sergeant_jones switchMove "";
 player switchMove "";

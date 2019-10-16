@@ -1,3 +1,6 @@
+
+waitUntil {checks_done};
+
 setDate [2020, 10, 25, 12, 10];
 
 enableSentences false;
@@ -11,5 +14,5 @@ enableSentences false;
 // ["InvestigationParent"] call it_fnc_createTask;
 // ["InvestigationMeeting"] call it_fnc_assignTask;
 
-["WelcomeParent"] call it_fnc_createTask;
-["WelcomeDavis"] call it_fnc_assignTask;
+["InvestigationParent"] call it_fnc_createTask;
+["InvestigationMeeting"] call it_fnc_assignTask;

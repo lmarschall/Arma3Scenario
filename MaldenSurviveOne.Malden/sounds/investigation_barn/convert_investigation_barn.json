@@ -1,0 +1,52 @@
+{
+    "texts": [
+        {
+            "name": "investigation_barn_one.mp3",
+            "text": "Look at that shit here. What happened here?",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
+        },
+        {
+            "name": "investigation_barn_two.mp3",
+            "text": "Looks like they put them here together to keep them quiet.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-B"
+        },
+		{
+            "name": "investigation_barn_three.mp3",
+            "text": "What a mess. Search for any survivor, we need some information!",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+		{
+            "name": "investigation_barn_four.mp3",
+            "text": "Looks bad Captain, seems like they've been tortured and thrown away. Some of them are dead for days.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-A"
+        },
+		{
+            "name": "investigation_barn_five.mp3",
+            "text": "Ok, I'll inform the commander.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "investigation_barn_six.mp3",
+            "text": "Commander Williams, coming. We managed to infiltrate the base and found lots of dead bodies. Looks like they were all rebels.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "investigation_barn_seven.mp3",
+            "text": "Lieutenant Wilson, we need some evidence. We talk later.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-D"
+        },
+        {
+            "name": "investigation_barn_eight.mp3",
+            "text": "Ok guys, let's take some pictures and then we get the hell out of here.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        }
+    ]
+}

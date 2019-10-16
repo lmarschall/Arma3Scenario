@@ -24,15 +24,23 @@ playMusic "Landing";
 //sleep 5;
 [1, "BLACK", 5, 1] call BIS_fnc_fadeEffect;
 
-/*
-player KbAddTopic ["drive","dialogues\drive.bikb","",""];
-medic KbAddTopic ["drive","dialogues\drive.bikb","",""];
-autorifler KbAddTopic ["drive","dialogues\drive.bikb","",""];
-engineer KbAddTopic ["drive","dialogues\drive.bikb","",""];
+player KbAddTopic ["investigation_boat","dialogues\investigation_boat.bikb","",""];
+sergeant_davis KbAddTopic ["investigation_boat","dialogues\investigation_boat.bikb","",""];
+sergeant_brown KbAddTopic ["investigation_boat","dialogues\investigation_boat.bikb","",""];
 
-medic KbTell [player,"drive","welcome", "VEHICLE"];
+sergeant_davis KbTell [player,"investigation_boat","investigationboatone", "VEHICLE"];
 waitUntil {
-medic KbWasSaid [player,"drive","welcome",3];	//Search in 3 last seconds
-};*/
+sergeant_davis KbWasSaid [player,"investigation_boat","investigationboatone",3];	//Search in 3 last seconds
+};
+
+player KbTell [sergeant_davis,"investigation_boat","investigationboattwo", "VEHICLE"];
+waitUntil {
+player KbWasSaid [sergeant_davis,"investigation_boat","investigationboattwo",3];	//Search in 3 last seconds
+};
+
+sergeant_brown KbTell [player,"investigation_boat","investigationboatthree", "VEHICLE"];
+waitUntil {
+sergeant_brown KbWasSaid [player,"investigation_boat","investigationboatthree",3];	//Search in 3 last seconds
+};
 
 ["InvestigationLanding"] call it_fnc_assignTask;

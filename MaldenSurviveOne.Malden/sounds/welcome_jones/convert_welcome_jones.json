@@ -1,0 +1,22 @@
+{
+    "texts": [
+        {
+            "name": "welcome_jones_one.mp3",
+            "text": "Hello Sergeant Jones, my name is Wilson. I'm your new squad leader.",
+			"code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "welcome_jones_two.mp3",
+            "text": "Ah, yeah good to see you here. Your equipment has been already taken to your new room. I'm the medic here and trying to keep ourselves alive form all the mosquitoes here. That's the biggest thread around here.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-A"
+        },
+		{
+            "name": "welcome_jones_three.mp3",
+            "text": "Ah good to hear that, looking forward for an easy mission.",
+			"code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        }
+    ]
+}

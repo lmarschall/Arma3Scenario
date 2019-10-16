@@ -12,6 +12,10 @@ switch (_triggerId) do
     {
         if (assignedTask == "welcome_jones") then { [] spawn it_fnc_welcomeJones;};
     };
+    case "trigger_centre":
+    {
+        if (assignedTask == "welcome_brown") then { [] spawn it_fnc_welcomeBrown;};
+    };
     case "trigger_office":
     {
         if (assignedTask == "welcome_williams") then { [] spawn it_fnc_welcomeWilliams;};

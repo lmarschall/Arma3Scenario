@@ -1,0 +1,46 @@
+{
+    "texts": [
+        {
+            "name": "welcome_williams_one.mp3",
+            "text": "Hey Commander Williams, good to see you. What's the current status?",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "welcome_williams_two.mp3",
+            "text": "Good to see you again. Seems like a miracle we're both in one piece after our last engagements. I'm happy you followed my invitation to this island, we need someone capable to communicate with the local people. They still do not trust us enough to get all the required information.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-D"
+        },
+		{
+            "name": "welcome_williams_three.mp3",
+            "text": "I'm happy I can help you. Been informed it has been pretty quiet out here the last weeks. Should be a walk in the park. So, what's our mission?",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+		{
+            "name": "welcome_williams_four.mp3",
+            "text": "Our last reports have shown an unknown source of violence against the local people. Your team will start tomorrow in the morning and meet up with an AAF officer. Your convoy will visit different help stations and talk to the people in the villages, investigating these occasions.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-D"
+        },
+		{
+            "name": "welcome_williams_five.mp3",
+            "text": "Sounds like something I can handle.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "welcome_williams_six.mp3",
+            "text": "Perfect, you can take a look around in the base, we got a fire range north of this position and at the airport in the south, our drones are being repaired and put in shape.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-D"
+        },
+        {
+            "name": "welcome_williams_seven.mp3",
+            "text": "Ok, I'll see what I'm up too.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        }
+    ]
+}

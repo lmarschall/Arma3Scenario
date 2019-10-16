@@ -1,25 +1,55 @@
 [0,0,false] spawn BIS_fnc_cinemaBorder;
 disableUserInput true;
 
-major_williams switchMove "HubBriefing_talkAround";
+commander_williams switchMove "HubBriefing_talkAround";
 player switchMove "HubSpectator_stand";
 
-major_williams doWatch (visiblePosition player);
+commander_williams doWatch (visiblePosition player);
 sleep 2;
 
 ["WelcomeWilliams"] call it_fnc_succeedTask;
 
-player KbAddTopic ["command","dialogues\command.bikb","",""];
-major_williams KbAddTopic ["command","dialogues\command.bikb","",""];
+player KbAddTopic ["welcome_williams","dialogues\welcome_williams.bikb","",""];
+commander_williams KbAddTopic ["welcome_williams","dialogues\welcome_williams.bikb","",""];
 
-major_williams KbTell [player,"command","welcome"];
+player KbTell [commander_williams,"welcome_williams","welcomewilliamsone"];
 waitUntil {
-major_williams KbWasSaid [player,"command","welcome",3];	//Search in 3 last seconds
+player KbWasSaid [commander_williams,"welcome_williams","welcomewilliamsone",3];	//Search in 3 last seconds
+};
+
+commander_williams KbTell [player,"welcome_williams","welcomewilliamstwo"];
+waitUntil {
+commander_williams KbWasSaid [player,"welcome_williams","welcomewilliamstwo",3];	//Search in 3 last seconds
+};
+
+player KbTell [commander_williams,"welcome_williams","welcomewilliamsthree"];
+waitUntil {
+player KbWasSaid [commander_williams,"welcome_williams","welcomewilliamsthree",3];	//Search in 3 last seconds
+};
+
+commander_williams KbTell [player,"welcome_williams","welcomewilliamsfour"];
+waitUntil {
+commander_williams KbWasSaid [player,"welcome_williams","welcomewilliamsfour",3];	//Search in 3 last seconds
+};
+
+player KbTell [commander_williams,"welcome_williams","welcomewilliamsfive"];
+waitUntil {
+player KbWasSaid [commander_williams,"welcome_williams","welcomewilliamsfive",3];	//Search in 3 last seconds
+};
+
+commander_williams KbTell [player,"welcome_williams","welcomewilliamssix"];
+waitUntil {
+commander_williams KbWasSaid [player,"welcome_williams","welcomewilliamssix",3];	//Search in 3 last seconds
+};
+
+player KbTell [commander_williams,"welcome_williams","welcomewilliamsseven"];
+waitUntil {
+player KbWasSaid [commander_williams,"welcome_williams","welcomewilliamsseven",3];	//Search in 3 last seconds
 };
 
 ["WelcomeBed"] call it_fnc_assignTask;
 
 [1,1,false] spawn BIS_fnc_cinemaBorder;
 disableUserInput false;
-major_williams switchMove "";
+commander_williams switchMove "";
 player switchMove "";

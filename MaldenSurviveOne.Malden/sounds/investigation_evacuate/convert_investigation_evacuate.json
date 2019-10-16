@@ -1,0 +1,22 @@
+{
+    "texts": [
+        {
+            "name": "investigation_evacuate_one.mp3",
+            "text": "Shit, the alarm went off.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "investigation_evacuate_two.mp3",
+            "text": "Command Williams, we've been spotted and are under fire, AAF is shooting at us. The boat is not an option anymore, we need an evacuation.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+		{
+            "name": "investigation_evacuate_three.mp3",
+            "text": "Sergeant Wilson, keep your head up, we'll send you a helicopter. Get to the lighthouse in the east of the island. There will be your rescue zone.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-D"
+        }
+    ]
+}

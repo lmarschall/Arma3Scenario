@@ -1,0 +1,40 @@
+class Sentences
+{
+	class InvestigationBoatOne	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBoat_One;
+		speech[] = {"\sounds\investigation_boat\investigation_boat_one.ogg"};			//Path to the sound file
+		actor = "sergeant_davis";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBoatTwo	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBoat_Two;
+		speech[] = {"\sounds\investigation_boat\investigation_boat_two.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+	class InvestigationBoatThree	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_InvestigationBoat_Three;	
+		speech[] = {"\sounds\investigation_boat\investigation_boat_three.ogg"};
+		actor = "sergeant_brown";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

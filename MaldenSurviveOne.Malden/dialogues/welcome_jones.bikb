@@ -1,0 +1,40 @@
+class Sentences
+{
+	class WelcomeJonesOne	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeJones_One; 
+		speech[] = {"\sounds\welcome_jones\welcome_jones_one.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class WelcomeJonesTwo	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeJones_Two;
+		speech[] = {"\sounds\welcome_jones\welcome_jones_two.ogg"};			//Path to the sound file
+		actor = "sergeant_jones";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class WelcomeJonesThree	//Name to be used later to call the sound
+	{
+		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
+		text = $STR_WelcomeJones_Three;
+		speech[] = {"\sounds\welcome_jones\welcome_jones_three.ogg"};			//Path to the sound file
+		actor = "player";			//unit that is speaking
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+};
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

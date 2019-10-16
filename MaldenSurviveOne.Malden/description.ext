@@ -15,49 +15,49 @@ class CfgTaskEnhancements
 #define CT_STATIC           0
 #define ST_PICTURE        0x30
 
-class RscPicture
-{
-    access = 0;
-    idc = -1;
-    type = CT_STATIC;
-    style = ST_PICTURE;
-    colorBackground[] = {0,0,0,0};
-    colorText[] = {1,1,1,1};
-    font = "PuristaLight";
-    sizeEx = 0;
-    lineSpacing = 0;
-    text = "";
-    fixedWidth = 0;
-    shadow = 0;
-    x = 0;
-    y = 0;
-    w = 0.2;
-    h = 0.15;
-};
+// class RscPicture
+// {
+//     access = 0;
+//     idc = -1;
+//     type = CT_STATIC;
+//     style = ST_PICTURE;
+//     colorBackground[] = {0,0,0,0};
+//     colorText[] = {1,1,1,1};
+//     font = "PuristaLight";
+//     sizeEx = 0;
+//     lineSpacing = 0;
+//     text = "";
+//     fixedWidth = 0;
+//     shadow = 0;
+//     x = 0;
+//     y = 0;
+//     w = 0.2;
+//     h = 0.15;
+// };
 
-class RscMissionScreen
-{
-	idd = -1;
-	movingEnable = 1;
-	duration = 1e+011;
-	fadein = 0;
-	fadeout = 1;
-	onload = "uinamespace setvariable ['BIS_RscMissionScreen',_this select 0];";
-	class controls
-	{
-		class Picture_0: RscPicture
-		{
-			idc = 1100;
-			text = "";
-			x = "safezoneX";
-			y = "safezoneY";
-			w = "safezoneW";
-			h = "safezoneH";
-			autoplay = 1;
-			loops = 1;
-		};
-	};
-};
+// class RscMissionScreen
+// {
+// 	idd = -1;
+// 	movingEnable = 1;
+// 	duration = 1e+011;
+// 	fadein = 0;
+// 	fadeout = 1;
+// 	onload = "uinamespace setvariable ['BIS_RscMissionScreen',_this select 0];";
+// 	class controls
+// 	{
+// 		class Picture_0: RscPicture
+// 		{
+// 			idc = 1100;
+// 			text = "";
+// 			x = "safezoneX";
+// 			y = "safezoneY";
+// 			w = "safezoneW";
+// 			h = "safezoneH";
+// 			autoplay = 1;
+// 			loops = 1;
+// 		};
+// 	};
+// };
 
 class CfgMusic
 {
@@ -126,6 +126,7 @@ class CfgFunctions
 			class Intro {};
 			class welcomeDavis {};
 			class welcomeJones {};
+			class welcomeBrown {};
 			class welcomeWilliams {};
 			class welcomeSleep {};
 			class inspectionMeeting {};
@@ -186,13 +187,23 @@ class MissionTasks
 		type = "talk";
 		parent = "welcome_parent";
 	};
+
+	class WelcomeBrown
+	{
+		id = "welcome_brown";
+		description = "Speak to Sergeant Brown in the commanding centre.";
+		title = "Speak to Sergeant Brown";
+		destination = "sergeant_brown";
+		type = "talk";
+		parent = "welcome_parent";
+	};
 	
 	class WelcomeWilliams
 	{
 		id = "welcome_williams";
-		description = "Speak to Commander Williams at the command center.";
+		description = "Speak to Commander Williams in the office.";
 		title = "Speak to Commander Williams";
-		destination = "major_williams";
+		destination = "commander_williams";
 		type = "talk";
 		parent = "welcome_parent";
 	};

@@ -1,0 +1,28 @@
+{
+    "texts": [
+        {
+            "name": "welcome_brown_one.mp3",
+            "text": "Hey Sergeant, looks pretty futuristic here with all the tech around.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "welcome_brown_two.mp3",
+            "text": "Yeah we have drones surveying all the important spots on the island. We're able to monitor all the occasions going on. It's been pretty quiet since we started the mission.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-B"
+        },
+		{
+            "name": "welcome_brown_three.mp3",
+            "text": "Ah good to hear that.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+		{
+            "name": "welcome_brown_four.mp3",
+            "text": "You can meet Commander Williams in his office. He's been waiting for you to inform you about our upcoming mission.",
+            "code": "en-US",
+            "voice": "en-US-Wavenet-B"
+        }
+    ]
+}

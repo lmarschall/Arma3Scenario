@@ -5,14 +5,16 @@
 
 ["AAF Military Base", "Le Port"] call it_fnc_showInfoText;
 
-/* player KbAddTopic ["investigation","dialogues\investigation.bikb","",""];
-medic KbAddTopic ["investigation","dialogues\investigation.bikb","",""];
-autorifler KbAddTopic ["investigation","dialogues\investigation.bikb","",""];
-engineer KbAddTopic ["investigation","dialogues\investigation.bikb","",""];
+player KbAddTopic ["investigation_landing","dialogues\investigation_landing.bikb","",""];
 
-medic KbTell [player,"investigation","welcome", "GROUP"];
+player KbTell [sergeant_davis,"investigation_landing","investigationlandingone", "VEHICLE"];
 waitUntil {
-medic KbWasSaid [player,"investigation","welcome",3];	//Search in 3 last seconds
-}; */
+player KbWasSaid [sergeant_davis,"investigation_landing","investigationlandingone",3];
+};
+
+player KbTell [sergeant_davis,"investigation_landing","investigationlandingtwo", "VEHICLE"];
+waitUntil {
+player KbWasSaid [sergeant_davis,"investigation_landing","investigationlandingtwo",3];
+};
 
 ["InvestigationSearch"] call it_fnc_assignTask;

@@ -4,19 +4,123 @@
 	<Package name="Dialogues">
 		<Container name="WelcomeDavis">
 			<Key ID="STR_WelcomeDavis_One">
-				<Original>Welcome to Malden, Lieutenant Wilson. We ‘ve been looking forward to have you with us. It’s been pretty boring here sitting around and seeing nothing is happening on this island.</Original>
+				<Original>Welcome to Malden, Lieutenant Wilson. We've been looking forward to have you with us. It's been pretty boring here sitting around and seeing nothing is happening on this island.</Original>
 			</Key>
 			<Key ID="STR_WelcomeDavis_Two">
-				<Original>Yeah, I was informed by the high command, that’s pretty quiet at the moment. The last years were harsh on this island. Hopefully the tensions will keep low as long we are here.</Original>
+				<Original>Yeah, I was informed by the high command, that's pretty quiet at the moment. The last years were harsh on this island. Hopefully the tensions will keep low as long we are here.</Original>
 			</Key>
 			<Key ID="STR_WelcomeDavis_Three">
-				<Original>We’ll see, things can get out of control very fast sometimes. You just need a match to start the fire.</Original>
+				<Original>We'll see, things can get out of control very fast sometimes. You just need a match to start the fire.</Original>
 			</Key>
 			<Key ID="STR_WelcomeDavis_Four">
-				<Original>Let’s hope for the best. Are the other teammates arrived yet?</Original>
+				<Original>Let's hope for the best. Are the other teammates arrived yet?</Original>
 			</Key>
 			<Key ID="STR_WelcomeDavis_Five">
-				<Original>Yeas, everybody’s here already. You can meet Captain… at the barracks. Name1 and Name2 are in the commanding centre.</Original>
+				<Original>Yes, everybody's here already. You can meet Sergeant Jones at the barracks. Sergeant Brown and Commander Williams are waiting for you in the commanding centre.</Original>
+			</Key>
+		</Container>
+		<Container name="WelcomeJones">
+			<Key ID="STR_WelcomeJones_One">
+				<Original>Hello Sergeant Jones, my name is Wilson. I'm your new squad leader.</Original>
+			</Key>
+			<Key ID="STR_WelcomeJones_Two">
+				<Original>Ah, yeah good to see you here. Your equipment has been already taken to your new room. I'm the medic here and trying to keep ourselves alive form all the mosquitoes here. That's the biggest thread around here.</Original>
+			</Key>
+			<Key ID="STR_WelcomeJones_Three">
+				<Original>Ah good to hear that, looking forward for an easy mission.</Original>
+			</Key>
+		</Container>
+		<Container name="WelcomeBrown">
+			<Key ID="STR_WelcomeBrown_One">
+				<Original>Hey Sergeant, looks pretty futuristic here with all the tech around.</Original>
+			</Key>
+			<Key ID="STR_WelcomeBrown_Two">
+				<Original>Yeah we have drones surveying all the important spots on the island. We’re able to monitor all the occasions going on. It’s been pretty quiet since we started the mission.</Original>
+			</Key>
+			<Key ID="STR_WelcomeBrown_Three">
+				<Original>Ah good to hear that.</Original>
+			</Key>
+			<Key ID="STR_WelcomeBrown_Four">
+				<Original>You can meet Commander Williams in his office. He’s been waiting for you to inform you about our upcoming mission.</Original>
+			</Key>
+		</Container>
+		<Container name="WelcomeWilliams">
+			<Key ID="STR_WelcomeWilliams_One">
+				<Original>Hey Commander Williams, good to see you. What’s the current status?</Original>
+			</Key>
+			<Key ID="STR_WelcomeWilliams_Two">
+				<Original>Good to see you again. Seems like a miracle we’re both in one piece after our last engagements. I’m happy you followed my invitation to this island, we need someone capable to communicate with the local people. They still do not trust us enough to get all the required information.</Original>
+			</Key>
+			<Key ID="STR_WelcomeWilliams_Three">
+				<Original>I’m happy I can help you. Been informed it has been pretty quiet out here the last weeks. Should be a walk in the park. So, what’s our mission?</Original>
+			</Key>
+			<Key ID="STR_WelcomeWilliams_Four">
+				<Original>Our last reports have shown an unknown source of violence against the local people. Your team will start tomorrow in the morning and meet up with an AAF officer. Your convoy will visit different help stations and talk to the people in the villages, investigating these occasions.</Original>
+			</Key>
+			<Key ID="STR_WelcomeWilliams_Five">
+				<Original>Sounds like something I can handle.</Original>
+			</Key>
+			<Key ID="STR_WelcomeWilliams_Six">
+				<Original>Perfect, you can take a look around in the base, we got a fire range north of this position and at the airport in the south, our drones are being repaired and put in shape.</Original>
+			</Key>
+			<Key ID="STR_WelcomeWilliams_Seven">
+				<Original>Ok, I’ll see what I’m up too.</Original>
+			</Key>
+		</Container>
+		<Container name="InvestigationBoat">
+			<Key ID="STR_InvestigationBoat_One">
+				<Original>At least we got some action going on here.</Original>
+			</Key>
+			<Key ID="STR_InvestigationBoat_Two">
+				<Original>Don't be too happy Sergeant, could be nothing. I want everybody to keep cool. The last thing we need is an open conflict between green and blue. We are going quiet and get out of there before the recognize anything.</Original>
+			</Key>
+			<Key ID="STR_InvestigationBoat_Three">
+				<Original>Sounds good to me.</Original>
+			</Key>
+		</Container>
+		<Container name="InvestigationLanding">
+			<Key ID="STR_InvestigationLanding_One">
+				<Original>Sergeant put the boat up there, in the water, we'll come back later.</Original>
+			</Key>
+			<Key ID="STR_InvestigationLanding_Two">
+				<Original>Guys stick to the environment and keep low. Communications off.</Original>
+			</Key>
+		</Container>
+		<Container name="InvestigationBarn">
+			<Key ID="STR_InvestigationBarn_One">
+				<Original>Look at that mess here. What happened here?</Original>
+			</Key>
+			<Key ID="STR_InvestigationBarn_Two">
+				<Original>Looks like they put them here together to keep them quiet.</Original>
+			</Key>
+			<Key ID="STR_InvestigationBarn_Three">
+				<Original>What a mess. Search for any survivor, we need some information.</Original>
+			</Key>
+			<Key ID="STR_InvestigationBarn_Four">
+				<Original>Looks bad Captain, seems like they've been tortured and thrown away. Some of them are dead for days.</Original>
+			</Key>
+			<Key ID="STR_InvestigationBarn_Five">
+				<Original>Ok, I'll inform the commander.</Original>
+			</Key>
+			<Key ID="STR_InvestigationBarn_Six">
+				<Original>Commander Williams, coming. We managed to infiltrate the base and found lots of dead bodies. Looks like they were all rebels.</Original>
+			</Key>
+			<Key ID="STR_InvestigationBarn_Seven">
+				<Original>Lieutenant Wilson, we need some evidence. We talk later.</Original>
+			</Key>
+			<Key ID="STR_InvestigationBarn_Eight">
+				<Original>Ok guys, let's take some pictures and then we get the hell out of here.</Original>
+			</Key>
+		</Container>
+		<Container name="InvestigationEvacuate">
+			<Key ID="STR_InvestigationEvacuate_One">
+				<Original>Shit, the alarm went off.</Original>
+			</Key>
+			<Key ID="STR_InvestigationEvacuate_Two">
+				<Original>Command Williams, we've been spotted and are under fire, AAF is shooting at us. The boat is not an option anymore, we need an evacuation.</Original>
+			</Key>
+			<Key ID="STR_InvestigationEvacuate_Three">
+				<Original>Sergeant Wilson, keep your head up, we'll send you a helicopter. Get to the lighthouse in the east of the island. There will be your rescue zone.</Original>
 			</Key>
 		</Container>
 	</Package>
