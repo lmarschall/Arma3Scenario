@@ -11,8 +11,8 @@ enableSentences false;
 //["InspectionParent"] call it_fnc_createTask;
 //["InspectionMeeting"] call it_fnc_assignTask;
 
-// ["InvestigationParent"] call it_fnc_createTask;
-// ["InvestigationMeeting"] call it_fnc_assignTask;
-
 ["InvestigationParent"] call it_fnc_createTask;
 ["InvestigationMeeting"] call it_fnc_assignTask;
+
+// ["WelcomeParent"] call it_fnc_createTask;
+// ["WelcomeDavis"] call it_fnc_assignTask;

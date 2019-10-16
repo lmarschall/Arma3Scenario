@@ -27,7 +27,7 @@ class Sentences
 		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
 		text = $STR_InvestigationBarn_Three;
 		speech[] = {"\sounds\investigation_barn\investigation_barn_three.ogg"};			//Path to the sound file
-		actor = "sergeant_jones";			//unit that is speaking
+		actor = "player";			//unit that is speaking
 		variant = "";
 		variantText = "";
 		class Arguments {};
@@ -38,7 +38,7 @@ class Sentences
 		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
 		text = $STR_InvestigationBarn_Four;
 		speech[] = {"\sounds\investigation_barn\investigation_barn_four.ogg"};			//Path to the sound file
-		actor = "player";			//unit that is speaking
+		actor = "sergeant_jones";			//unit that is speaking
 		variant = "";
 		variantText = "";
 		class Arguments {};
@@ -60,7 +60,7 @@ class Sentences
 		//text = "Welcome to Malden, soldier. Your task is to retake the hostile enemy base.";	//Subtitles
 		text = $STR_InvestigationBarn_Six;
 		speech[] = {"\sounds\investigation_barn\investigation_barn_six.ogg"};			//Path to the sound file
-		actor = "commander_williams";			//unit that is speaking
+		actor = "player";			//unit that is speaking
 		variant = "";
 		variantText = "";
 		class Arguments {};
