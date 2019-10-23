@@ -1,0 +1,22 @@
+{
+    "texts": [
+        {
+            "name": "observation_report_one.mp3",
+            "text": "Commander, we are back from visiting the villages. The local people had no informations about the recent occasions.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "observation_report_two.mp3",
+            "text": "Didn't expect them to drop us some information anyway when the AAF forces are around. Anyway, we got something from the drone team. They found a shack on the island south east of Malden. We've been observing this building for days now and recognized a high fluctuation of people visiting this place, but only a few ones get out of there. Something is wrong with this location, you and your team will find out what's going on there. You will start at 2 am in the night to use the darkness as your cover.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-D"
+        },
+		{
+            "name": "observation_report_three.mp3",
+            "text": "Roger, Sir.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        }
+    ]
+}

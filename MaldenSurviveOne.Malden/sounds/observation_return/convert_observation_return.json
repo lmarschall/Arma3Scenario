@@ -1,0 +1,46 @@
+{
+    "texts": [
+        {
+            "name": "observation_return_one.mp3",
+            "text": "What a boring trip. At least we got out of our base.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "observation_return_two.mp3",
+            "text": "It was good to introduce our selves to the local people, now they know that we are protecting them.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+		{
+            "name": "observation_return_three.mp3",
+            "text": "Protecting them from what. There is no bullet been fired for days.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "observation_return_four.mp3",
+            "text": "We need to establish a connection to the population, they didn’t trust us and the AAF forces wasn’t a real help. They seemed to be frightened by them. I only saw old people and children out there, seems like a whole generation of inhabitants is missing.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "observation_return_five.mp3",
+            "text": "They are all gone.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "observation_return_six.mp3",
+            "text": "Yeah but where are they now?",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "observation_return_seven.mp3",
+            "text": "Not a problem to me, as long it keeps quiet on the island, our job is done.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        }
+    ]
+}

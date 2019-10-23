@@ -1,0 +1,16 @@
+{
+    "texts": [
+        {
+            "name": "observation_meeting_one.mp3",
+            "text": "Good morning gentlemen, good to see you, all prepared for the mission? Our task is to visit the villages and speak with the local population. Keep your fingers away from the triggers, this is a peace mission and I command you to keep cool.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        },
+        {
+            "name": "observation_meeting_two.mp3",
+            "text": "Sergeant Brown, you drive, let’s go.",
+            "code": "en-GB",
+            "voice": "en-GB-Wavenet-B"
+        }
+    ]
+}
