@@ -3,8 +3,8 @@
         {
             "name": "observation_return_one.mp3",
             "text": "What a boring trip. At least we got out of our base.",
-            "code": "en-GB",
-            "voice": "en-GB-Wavenet-B"
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
         },
         {
             "name": "observation_return_two.mp3",
@@ -15,8 +15,8 @@
 		{
             "name": "observation_return_three.mp3",
             "text": "Protecting them from what. There is no bullet been fired for days.",
-            "code": "en-GB",
-            "voice": "en-GB-Wavenet-B"
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
         },
         {
             "name": "observation_return_four.mp3",
@@ -27,20 +27,20 @@
         {
             "name": "observation_return_five.mp3",
             "text": "They are all gone.",
-            "code": "en-GB",
-            "voice": "en-GB-Wavenet-B"
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
         },
         {
             "name": "observation_return_six.mp3",
             "text": "Yeah but where are they now?",
-            "code": "en-GB",
-            "voice": "en-GB-Wavenet-B"
+            "code": "en-US",
+            "voice": "en-US-Wavenet-A"
         },
         {
             "name": "observation_return_seven.mp3",
             "text": "Not a problem to me, as long it keeps quiet on the island, our job is done.",
-            "code": "en-GB",
-            "voice": "en-GB-Wavenet-B"
+            "code": "en-US",
+            "voice": "en-US-Wavenet-D"
         }
     ]
 }
