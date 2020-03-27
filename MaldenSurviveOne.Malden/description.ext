@@ -273,7 +273,7 @@ class MissionTasks
 		id = "inspection_zamak";
 		description = "Get your team into the Zamak Transporter.";
 		title = "Get in the Zamak";
-		destination = "zamak";
+		destination = "convoyzamak";
 		type = "getin";
 		parent = "inspection_parent";
 	};
