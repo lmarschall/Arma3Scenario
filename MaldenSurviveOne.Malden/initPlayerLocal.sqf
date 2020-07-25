@@ -9,7 +9,7 @@ enableSentences false;
 //[] spawn it_fnc_Intro;
 
 ["InspectionParent"] call it_fnc_createTask;
-["InspectionOfficer"] call it_fnc_assignTask;
+["InspectionHandle"] call it_fnc_assignTask;
 
 // ["InvestigationParent"] call it_fnc_createTask;
 // ["InvestigationMeeting"] call it_fnc_assignTask;

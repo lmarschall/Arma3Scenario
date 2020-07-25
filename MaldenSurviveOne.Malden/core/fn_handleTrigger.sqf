@@ -50,6 +50,14 @@ switch (_triggerId) do
     {
         if (assignedTask == "inspection_zamak") then { [] spawn it_fnc_inspectionStart;};
     };
+    case "trigger_zamak":
+    {
+        if (assignedTask == "inspection_zamak") then { [] spawn it_fnc_inspectionStart;};
+    };
+    case "trigger_chapoi":
+    {
+        if (assignedTask == "inspection_handle") then { [] spawn it_fnc_inspectionChapoi;};
+    };
     case "trigger_landing":
     {
         if (assignedTask == "investigation_landing") then { [] spawn it_fnc_investigationLanding;};

@@ -6,6 +6,8 @@ checks_done = false;
 
 error_occured = false;
 
+spokenToDoctor = false;
+
 diag_log "Starting Check for All Units...";
 
 _units = ["sergeant_davis","sergeant_jones","sergeant_brown", "commander_williams", "aaf_officer", "hunter"];

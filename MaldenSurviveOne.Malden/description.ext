@@ -112,6 +112,13 @@ class CfgFunctions
 	class Island_Thunder
 	{
 		tag = "it";
+
+		class Actions
+		{
+			file = "actions";
+
+			class speakTo {};
+		};
 		
 		class Dialogues
 		{
@@ -133,6 +140,7 @@ class CfgFunctions
 			class inspectionDrive {};
 			class inspectionOfficer {};
 			class inspectionStart {};
+			class inspectionChapoi {};
 			class investigationBoat {};
 			class investigationLanding {};
 			class investigationBarn {};

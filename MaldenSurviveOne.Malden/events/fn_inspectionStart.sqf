@@ -2,9 +2,11 @@
 
 ["InspectionHandle"] call it_fnc_assignTask;
 
-units group convoyzamak doMove getMarkerPos "marker_inspection_aid";
+_group = group convoyzamak;
 
-// group convoyzamak setCurrentWaypoint [group convoyzamak, 2];
+// units group convoyzamak doMove getMarkerPos "marker_inspection_aid";
+
+_group setCurrentWaypoint [_group, 2];
 
 player KbAddTopic ["inspection","dialogues\inspection.bikb","",""];
 aafleader KbAddTopic ["inspection","dialogues\inspection.bikb","",""];
@@ -14,16 +16,20 @@ waitUntil {
 aafleader KbWasSaid [player,"inspection","welcome",3];	//Search in 3 last seconds
 };
 
-sleep 20;
+sleep 30;
+
+// deleteGroup _group;
 
 [0, "BLACK", 5, 1] call BIS_fnc_fadeEffect;
 
 skipTime 1;
 
-// convoystart setPos getMarkerPos "marker_convoystart_skip_drive";
-convoyzamak setPos getMarkerPos "marker_convoyzamak_skip_drive";
-// convoyend setPos getMarkerPos "marker_convoyend_skip_drive";
+convoyzamak setPos getMarkerPos "marker_convoy_skip_drive_chapoi";
 
-// // group convoyzamak setCurrentWaypoint [group convoyzamak, 4];
+// units _group doMove getMarkerPos "marker_inspection_aid";
+
+_group setCurrentWaypoint [_group, 4];
 
 [1, "BLACK", 5, 1] call BIS_fnc_fadeEffect;
+
+_aafunits orderGetIn false;
