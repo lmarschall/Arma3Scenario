@@ -112,13 +112,6 @@ class CfgFunctions
 	class Island_Thunder
 	{
 		tag = "it";
-
-		class Actions
-		{
-			file = "actions";
-
-			class speakTo {};
-		};
 		
 		class Dialogues
 		{
@@ -155,6 +148,7 @@ class CfgFunctions
 			class createTask {};
 			class succeedTask {};
 			class handleTrigger {};
+			class handleAction {};
 			class showInfoText {};
 			class setupPlayer {};
 			class setupVehicle {};
